@@ -6,8 +6,13 @@ USER root
 
 RUN apt-get update && \
   apt-get install -y --no-install-recommends \
-    build-essential flex bison libc6-dev-i386 linux-libc-dev:i386 \
-    libfl-dev:i386 gcc-multilib \
+    build-essential \
+    flex \
+    bison \
+    libc6-dev-i386 \
+    linux-libc-dev:i386 \
+    libfl-dev:i386 \
+    gcc-multilib \
     git && \
   rm -rf /var/lib/apk/lists/*
 
