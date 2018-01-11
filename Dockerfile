@@ -9,3 +9,5 @@ RUN apt-get update && \
     build-essential flex bison libc6-dev-i386 linux-libc-dev:i386 \
     libfl-dev:i386 gcc-multilib && \
   rm -rf /var/lib/apk/lists/*
+
+USER docker
