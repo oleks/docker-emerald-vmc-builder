@@ -17,3 +17,6 @@ RUN apt-get update && \
   rm -rf /var/lib/apk/lists/*
 
 USER docker
+
+RUN mkdir /home/docker/data/
+WORKDIR /home/docker/data/
