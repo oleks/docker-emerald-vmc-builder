@@ -1,4 +1,4 @@
-FROM portoleks/debian-i386:v9.2_0.1
+FROM portoleks/debian:v9.2_0.1
 
 MAINTAINER oleks <oleks@oleks.info>
 
@@ -9,9 +9,8 @@ RUN apt-get update && \
     build-essential \
     flex \
     bison \
-    libc6-dev-i386 \
-    linux-libc-dev:i386 \
-    libfl-dev:i386 \
+    libc6-dev \
+    libfl-dev \
     gcc-multilib \
     git && \
   rm -rf /var/lib/apk/lists/*
